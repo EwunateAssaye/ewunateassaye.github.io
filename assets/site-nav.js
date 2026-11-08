@@ -131,6 +131,7 @@
       }
 
       updateMoreMenu();
+      window.addEventListener('load', updateMoreMenu);
       window.addEventListener('resize', updateMoreMenu);
     }
 
@@ -207,19 +208,19 @@
     var prefix = inSubdir ? '../' : '';
 
     var searchIndex = [
+      { title: 'Ewunate Assaye', url: prefix + 'index.html', keywords: 'Ewunate Assaye Home Education and experience MSc Bio-Instrumentation Engineering BSc Biomedical Engineering Jimma University University of Gondar Hiwot-Fana Specialized Hospital Certificates deep learning medical image health care data' },
       { title: 'Ewunate Assaye - About', url: prefix + 'about.html', keywords: 'Education and experience MSc Bio-Instrumentation Engineering BSc Biomedical Engineering Jimma University University of Gondar Hiwot-Fana Specialized Hospital Certificates deep learning medical image health care data' },
       { title: 'Ewunate Assaye - Awards', url: prefix + 'awards.html', keywords: 'Won MICCAI 2026 CARE Challenge Liver Segmentation CARE-Liver task Won MICCAI 2025 BraTS Challenge Tumor Progression' },
       { title: 'Ewunate Assaye - Developed tools', url: prefix + 'developed-tools.html', keywords: 'Developed tools MedImgAnnotator Medication Non-adherence classifier Acute respiratory infection predictor' },
       { title: 'Ewunate Assaye - MedImgAnnotator', url: prefix + 'developed-tools/medimgannotator.html', keywords: 'MedImgAnnotator batch-annotation preprocessing tool medical images volumes Python plugins MICCAI 2026 CARE Liver Challenge 6412 MR volumes' },
       { title: 'Ewunate Assaye - Medication Non-adherence', url: prefix + 'developed-tools/medication-non-adherence.html', keywords: 'Medication nonadherence monitoring real time classification data collection AI app diabetes' },
       { title: 'Ewunate Assaye - Acute respiratory Infection', url: prefix + 'developed-tools/acute-respiratory-infection.html', keywords: 'Automatic demographic information based acute respiratory infection predictor AI app aridetector streamlit' },
-      { title: 'Ewunate Assaye - Publications', url: prefix + 'publications.html', keywords: 'Publications Kassaw Iterative human-in-the-loop learning liver Swin UNETR radiomics fertility rate Ethiopia type 2 diabetes khat chewing heart activity brain metastases EMG ECG muscle fatigue pharmacies MSc Thesis' },
+      { title: 'Ewunate Assaye - Publications', url: prefix + 'publications.html', keywords: 'Publications Kassaw Iterative human-in-the-loop learning liver Swin UNETR radiomics fertility rate Ethiopia type 2 diabetes khat chewing heart activity brain metastases EMG ECG muscle fatigue pharmacies MSc Thesis unsafe sexual behavior unintended pregnancy viral load suppression HIV acute respiratory infections' },
       { title: 'Ewunate Assaye - Research area', url: prefix + 'research-area.html', keywords: 'Research areas Medical image processing Health care data analysis Health care AI' },
-      { title: 'Ewunate Assaye - Others', url: prefix + 'others.html', keywords: 'Others Snacks Best websites and links' },
       { title: 'Ewunate Assaye - Extracurricular activities', url: prefix + 'extracurricular-activities.html', keywords: 'Extracurricular activities Cycling India gate Leopard hills Running Strava Hiking Himachal Pradesh Simien Mountains Playing football IIT Delhi Playing basketball Jimma' },
-      { title: 'Snacks - Best websites and links', url: prefix + 'snacks/best-websites-and-links.html', keywords: 'Fellowship and research opportunity sites Marie Sklodowska-Curie Actions AFRICAAI Conference sites ICLR NeurIPS MIDL CVPR ICCV ECCV MICCAI ISMRM ISBI Journal match Finders SpringerLink Wiley Elsevier IEEE Scimago MRI physics Radiology tutorials' },
-      { title: 'Snacks - Challenge websites', url: prefix + 'snacks/challenge-websites.html', keywords: 'Medical image segmentation and analysis challenge websites Grand challenges MICCAI MRIxFields Physionet Synapse Kaggle AMOS Codalab Datasets repositories Zenodo TCIA Hugging Face UCI Stanford AIMI MIDRC UK Biobank fastMRI Openneuro' },
-      { title: 'Snacks - Interesting researchs', url: prefix + 'snacks/interesting-researchs.html', keywords: 'Interesting researchs CT segmentation model nnInteractive nnUnet NVIDIA Medical Imaging TotalSegmentator RadWorld MedVTok MedSynV2 medDARE SynthECG' }
+      { title: 'Snacks - Best websites and links', url: prefix + 'snacks/best-websites-and-links.html', keywords: 'Snacks Fellowship and research opportunity sites Marie Sklodowska-Curie Actions AFRICAAI Conference sites ICLR NeurIPS MIDL CVPR ICCV ECCV MICCAI ISMRM ISBI Journal match Finders SpringerLink Wiley Elsevier IEEE Scimago MRI physics Radiology tutorials' },
+      { title: 'Snacks - Challenge websites', url: prefix + 'snacks/challenge-websites.html', keywords: 'Snacks Medical image segmentation and analysis challenge websites Grand challenges MICCAI MRIxFields Physionet Synapse Kaggle AMOS Codalab Datasets repositories Zenodo TCIA Hugging Face UCI Stanford AIMI MIDRC UK Biobank fastMRI Openneuro' },
+      { title: 'Snacks - Interesting researchs', url: prefix + 'snacks/interesting-researchs.html', keywords: 'Snacks Interesting researchs CT segmentation model nnInteractive nnUnet nnFoundation NVIDIA Medical Imaging TotalSegmentator RadWorld MedVTok MedSynV2 medDARE SynthECG' }
     ];
 
     if (openSearchBtn && searchBanner) {
