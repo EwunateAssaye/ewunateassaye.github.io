@@ -1,0 +1,23 @@
+/*
+  Spacing overrides for the main page content.
+  Google Sites adds 1.5rem of padding on four levels (section top, block top,
+  block bottom, section bottom), which leaves about 96px between consecutive
+  topics. These rules bring that down to about 32px.
+  Only content inside the main page area (.UtePc) is affected; the header
+  and footer are left alone.
+*/
+
+@media only screen and (min-width: 768px) {
+  .UtePc .yaqOZd:not(.LB7kq):not(.WxWicb) {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.UtePc .OjCsFc {
+  padding-top: 0.5rem;
+}
+
+.UtePc .wHaque {
+  padding-bottom: 0.5rem;
+}
