@@ -1,23 +1,62 @@
 /*
-  Spacing overrides for the main page content.
-  Google Sites adds 1.5rem of padding on four levels (section top, block top,
-  block bottom, section bottom), which leaves about 96px between consecutive
-  topics. These rules bring that down to about 32px.
-  Only content inside the main page area (.UtePc) is affected; the header
-  and footer are left alone.
+  Comprehensive Spacing & Layout Optimization
+  Overrides bulky Google Sites inline/nested section padding
 */
 
+/* 1. Eliminate huge spacing on the very first section below top navigation */
+.SwuGbc section:first-child .mYVXT {
+  padding-top: 18px !important;
+}
+
+/* 2. Compact vertical spacing between consecutive sections */
+.UtePc section.yaqOZd,
+.UtePc .yaqOZd:not(.LB7kq):not(.WxWicb) {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+
 @media only screen and (min-width: 768px) {
+  .UtePc section.yaqOZd,
   .UtePc .yaqOZd:not(.LB7kq):not(.WxWicb) {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.35rem !important;
+    padding-bottom: 0.35rem !important;
   }
 }
 
+/* 3. Compact tile/cell inner top & bottom padding */
 .UtePc .OjCsFc {
-  padding-top: 0.5rem;
+  padding-top: 0.25rem !important;
 }
 
 .UtePc .wHaque {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem !important;
+}
+
+/* 4. Fix oversized heading margins inside main content */
+.UtePc h1, .UtePc h2, .UtePc h3,
+.UtePc .CDt4Ke.OmQG5e,
+.UtePc .CDt4Ke.JYVBee,
+.UtePc .CDt4Ke.duRjpb {
+  margin-top: 8px !important;
+  margin-bottom: 4px !important;
+}
+
+/* 5. Clean, professional list spacing across numbered and bulleted lists */
+.UtePc ol.n8H08c,
+.UtePc ul.n8H08c {
+  margin-top: 4px !important;
+  margin-bottom: 8px !important;
+}
+
+.UtePc ol.n8H08c > li,
+.UtePc ul.n8H08c > li {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+}
+
+.UtePc ol.n8H08c > li p.zfr3Q,
+.UtePc ul.n8H08c > li p.zfr3Q {
+  line-height: 1.6 !important;
+  margin-top: 2px !important;
+  margin-bottom: 4px !important;
 }
