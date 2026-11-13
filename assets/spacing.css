@@ -167,14 +167,34 @@
   line-height: 1.5 !important;
 }
 
-/* 6. MedImgAnnotator Download Links: Keep (GitHub) Inline on Desktop */
+/* 6. MedImgAnnotator Action Links: Centered Block with Left-Aligned Items */
+.UtePc .medimg-links-center {
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 100%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: left !important;
+}
+
+.UtePc .medimg-links-center p.zfr3Q.CDt4Ke {
+  text-align: left !important;
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+  line-height: 1.5 !important;
+}
+
+.UtePc .medimg-links-center p.zfr3Q.CDt4Ke:first-child {
+  margin-top: 0 !important;
+}
+
+.UtePc .medimg-links-center p.zfr3Q.CDt4Ke:last-child {
+  margin-bottom: 0 !important;
+}
+
 @media only screen and (min-width: 900px) {
-  #h\.77cc3cf15fa64d88_0 p.zfr3Q,
-  #h\.77cc3cf15fa64d88_4 p.zfr3Q {
+  #h\.77cc3cf15fa64d88_0 .medimg-links-center p.zfr3Q {
     white-space: nowrap !important;
-  }
-  #h\.77cc3cf15fa64d88_0 .tyJCtd {
-    padding-right: 0 !important;
   }
 }
 
