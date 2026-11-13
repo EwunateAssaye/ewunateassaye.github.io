@@ -1,43 +1,49 @@
 /*
-  Comprehensive Spacing & Layout Optimization for Ewunate Assaye Portfolio
-  Overrides bulky Google Sites inline/nested section padding, margins, and gaps.
+  Spacing & Typography Optimization
+  Clears fixed top navigation cleanly and standardizes vertical rhythm
+  between consecutive sections, subtopics, headings, paragraphs, and lists.
 */
 
-/* 1. Global Section Compaction (removes huge gaps between consecutive sections) */
-.UtePc section.yaqOZd,
-.UtePc .yaqOZd:not(.LB7kq):not(.WxWicb),
-section.yaqOZd:not(.LB7kq):not(.WxWicb) {
-  padding-top: 4px !important;
-  padding-bottom: 4px !important;
-  min-height: 0 !important;
-}
-
-@media only screen and (min-width: 768px) {
-  .UtePc section.yaqOZd,
-  .UtePc .yaqOZd:not(.LB7kq):not(.WxWicb),
-  section.yaqOZd:not(.LB7kq):not(.WxWicb) {
-    padding-top: 6px !important;
-    padding-bottom: 6px !important;
-  }
-}
-
-/* First section below header/navigation */
+/* 1. Fixed Header Clearance (56px navbar) & First-Section Top Breathing Room */
 .SwuGbc > section:first-child .mYVXT,
 .UtePc > section:first-child .mYVXT {
-  padding-top: 14px !important;
+  padding-top: 56px !important;
+  padding-bottom: 0 !important;
 }
 
-/* Consecutive sections have minimal vertical margin */
-.UtePc section.yaqOZd + section.yaqOZd {
-  margin-top: 0 !important;
+.UtePc > section:first-child {
+  padding-top: 2.75rem !important;
+  padding-bottom: 4px !important;
 }
 
-/* 2. Compact Inner Grid & Table Containers */
-.UtePc .mYVXT {
+.UtePc > section:first-child .OjCsFc,
+.UtePc > section:first-child .dmUFtb,
+.UtePc > section:first-child .wHaque,
+.UtePc > section:first-child .g5GTcb {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
 
+/* 2. Consecutive Sections & Last Section */
+.UtePc > section:not(:first-child).yaqOZd,
+.UtePc > section:not(:first-child) .yaqOZd:not(.LB7kq):not(.WxWicb) {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .UtePc > section:not(:first-child).yaqOZd,
+  .UtePc > section:not(:first-child) .yaqOZd:not(.LB7kq):not(.WxWicb) {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+}
+
+.UtePc > section:last-child {
+  padding-bottom: 18px !important;
+}
+
+.UtePc > section:not(:first-child) .mYVXT,
 .UtePc .LS81yb {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -45,57 +51,74 @@ section.yaqOZd:not(.LB7kq):not(.WxWicb) {
   margin-bottom: 0 !important;
 }
 
-/* Eliminate excessive 1.5rem padding on tile wrappers */
+/* 3. Tile / Cell Inner Padding Normalization */
 .UtePc .OjCsFc,
-.UtePc .dmUFtb {
-  padding-top: 3px !important;
-}
-
+.UtePc .dmUFtb,
 .UtePc .wHaque,
 .UtePc .g5GTcb {
-  padding-bottom: 3px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-.UtePc .D2fZ2,
-.UtePc .zu5uec {
-  padding-top: 2px !important;
-  padding-bottom: 2px !important;
-}
-
-.UtePc .mGzaTb {
-  padding-top: 2px !important;
-  padding-bottom: 2px !important;
-}
-
-.UtePc .Depvyb {
+.UtePc .tyJCtd.mGzaTb,
+.UtePc .tyJCtd.Depvyb,
+.UtePc .LS81yb .mGzaTb,
+.UtePc .LS81yb .Depvyb {
   padding-top: 3px !important;
   padding-bottom: 3px !important;
 }
 
-/* 3. Heading & Title Margins */
-.UtePc h1, .UtePc h2, .UtePc h3, .UtePc h4,
+/* Keep generous top cushion on opening tile of first section below navbar */
+.UtePc > section:first-child .OjCsFc .mGzaTb,
+.UtePc > section:first-child .OjCsFc .Depvyb,
+.UtePc > section:first-child .dmUFtb .mGzaTb,
+.UtePc > section:first-child .dmUFtb .Depvyb {
+  padding-top: 12px !important;
+}
+
+.UtePc > section:first-child .D2fZ2:not(.OjCsFc):not(.dmUFtb) .mGzaTb,
+.UtePc > section:first-child .D2fZ2:not(.OjCsFc):not(.dmUFtb) .Depvyb {
+  padding-top: 6px !important;
+}
+
+/* 4. Paragraph & Subtopic Heading Spacing */
+.UtePc p.CDt4Ke,
+.UtePc .zfr3Q.CDt4Ke:not(h1):not(h2):not(h3):not(h4) {
+  margin-top: 6px !important;
+  margin-bottom: 8px !important;
+  line-height: 1.55 !important;
+}
+
+.UtePc h1,
+.UtePc h2,
+.UtePc h3,
+.UtePc h4,
 .UtePc .CDt4Ke.OmQG5e,
 .UtePc .CDt4Ke.JYVBee,
-.UtePc .CDt4Ke.duRjpb,
-.UtePc .puwcIf {
-  margin-top: 8px !important;
+.UtePc .CDt4Ke.duRjpb {
+  margin-top: 12px !important;
   margin-bottom: 4px !important;
   line-height: 1.35 !important;
 }
 
-/* 4. Paragraph Spacing */
-.UtePc p.CDt4Ke,
-.UtePc .zfr3Q.CDt4Ke {
-  margin-top: 4px !important;
-  margin-bottom: 6px !important;
-  line-height: 1.55 !important;
+.UtePc .tyJCtd > .zfr3Q:first-child,
+.UtePc .tyJCtd > .aP9Z7e:first-child + .zfr3Q,
+.UtePc .tyJCtd > .BKnRcf:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
-/* 5. Clean, Professional List Spacing */
+.UtePc .tyJCtd > .zfr3Q:last-child,
+.UtePc .tyJCtd > .BKnRcf:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* 5. Ordered & Unordered List Rhythm */
 .UtePc ol.n8H08c,
 .UtePc ul.n8H08c {
   margin-top: 4px !important;
-  margin-bottom: 6px !important;
+  margin-bottom: 4px !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
@@ -104,17 +127,39 @@ section.yaqOZd:not(.LB7kq):not(.WxWicb) {
 .UtePc ul.n8H08c > li,
 .UtePc li.lsiHE,
 .UtePc li.eD0Rn {
-  margin-top: 2px !important;
-  margin-bottom: 4px !important;
+  margin-top: 4px !important;
+  margin-bottom: 5px !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+  line-height: 1.5 !important;
 }
 
-.UtePc ol.n8H08c > li p,
-.UtePc ul.n8H08c > li p,
-.UtePc li.lsiHE p.CDt4Ke,
-.UtePc li.eD0Rn p.CDt4Ke,
-.UtePc li p.zfr3Q {
+.UtePc ol.n8H08c > li:first-child,
+.UtePc ul.n8H08c > li:first-child {
+  margin-top: 0 !important;
+}
+
+.UtePc ol.n8H08c > li:last-child,
+.UtePc ul.n8H08c > li:last-child {
+  margin-bottom: 0 !important;
+}
+
+.UtePc ol.n8H08c > li > .zfr3Q,
+.UtePc ul.n8H08c > li > .zfr3Q,
+.UtePc ol.n8H08c > li > .CDt4Ke.zfr3Q,
+.UtePc ul.n8H08c > li > .CDt4Ke.zfr3Q,
+.UtePc ol.n8H08c > li h1,
+.UtePc ol.n8H08c > li h2,
+.UtePc ol.n8H08c > li h3,
+.UtePc ol.n8H08c > li h4,
+.UtePc ul.n8H08c > li h1,
+.UtePc ul.n8H08c > li h2,
+.UtePc ul.n8H08c > li h3,
+.UtePc ul.n8H08c > li h4,
+.UtePc li.lsiHE > .zfr3Q,
+.UtePc li.lsiHE > .CDt4Ke,
+.UtePc li.eD0Rn > .zfr3Q,
+.UtePc li.eD0Rn > .CDt4Ke {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   padding-top: 0 !important;
@@ -122,7 +167,18 @@ section.yaqOZd:not(.LB7kq):not(.WxWicb) {
   line-height: 1.5 !important;
 }
 
-/* 6. Footer preservation */
+/* 6. MedImgAnnotator Download Links: Keep (GitHub) Inline on Desktop */
+@media only screen and (min-width: 900px) {
+  #h\.77cc3cf15fa64d88_0 p.zfr3Q,
+  #h\.77cc3cf15fa64d88_4 p.zfr3Q {
+    white-space: nowrap !important;
+  }
+  #h\.77cc3cf15fa64d88_0 .tyJCtd {
+    padding-right: 0 !important;
+  }
+}
+
+/* 7. Preserve Clean Footer Padding */
 footer .yaqOZd,
 footer .lQAHbd {
   padding-top: 14px !important;
